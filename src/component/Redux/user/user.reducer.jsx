@@ -3,7 +3,7 @@ const INITIAL_STATE = {
 	currentUser: null,
 };
 
-const userReducer = (prevState = INITIAL_STATE, action) => {
+const cartReducer = (prevState = INITIAL_STATE, action) => {
 	switch (action.type) {
 		case userActionTypes.SET_CURRENT_USER:
 			return {
@@ -15,4 +15,4 @@ const userReducer = (prevState = INITIAL_STATE, action) => {
 			return prevState;
 	}
 };
-export default userReducer;
+export default cartReducer;
